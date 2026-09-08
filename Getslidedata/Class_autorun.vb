@@ -32,7 +32,7 @@ Public Class AutoStartup : Implements IExtensionApplication
 
                 ' 显示成功加载消息
                 ed.WriteMessage(vbLf & "==========================================")
-                ed.WriteMessage(vbLf & "✅ 『挡墙数据提取插件 for CAD2014』Getdq.dll 已成功加载！")
+                ed.WriteMessage(vbLf & "✅ 『挡墙数据提取插件 for ZWCAD2025』Getdq.dll 已成功加载！")
                 ed.WriteMessage(vbLf & "💡 提示: 输入 getdq 开始使用")
                 ed.WriteMessage(vbLf & "开发者：杜金龙 1969399672@QQ.com")
                 ed.WriteMessage(vbLf & "==========================================" & vbLf)
