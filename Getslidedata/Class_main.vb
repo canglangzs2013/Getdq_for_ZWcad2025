@@ -132,6 +132,13 @@ Public Class Class_main
         Next
 
 
+        ' 1. 设置排序规则
+        datatable_T.DefaultView.Sort = "x ASC"
+        ' 2. 将排序后的视图转换为一个新的 DataTable
+        datatable_T = datatable_T.DefaultView.ToTable()
+        ' 现在 sortedTable 就是按 x 列升序排列的全新表
+
+
 
         dataset_DQ.Tables.Add(datatable_T)
         arr.Add(" 挡墙顶部地形线")
@@ -168,7 +175,11 @@ Public Class Class_main
             datatable_B.Rows.Add(dr)
         Next
 
-
+        ' 1. 设置排序规则
+        datatable_B.DefaultView.Sort = "x ASC"
+        ' 2. 将排序后的视图转换为一个新的 DataTable
+        datatable_B = datatable_B.DefaultView.ToTable()
+        ' 现在 sortedTable 就是按 x 列升序排列的全新表
 
         dataset_DQ.Tables.Add(datatable_B)
         arr.Add("挡墙底部地形线")
